@@ -17,22 +17,32 @@ let person3 = {
         cupids_candies:"Chocolate Malt"
     }]
 }
-
-
-for (let key of Object.keys(person3)){
-    console.log(`${key}=> ${person3.shakes[key]}`);
+function food(thing) {
+    if (typeof thing==='string'){
+        console.log(thing)
+    
+    }else if(Array.isArray(thing)){
+        for(let i of thing){
+            food(i)
+        }
+    }else{
+        for(let key in thing){
+            food(thing[key])
+        }
+    }
 }
 
+food(person3)
 // or 
-console.log(person3.pizza)
-console.log(person3.tacos)
-console.log(person3.burgers)
-console.log(person3.ice_cream)
-console.log(person3.shakes[0].oberwise)
-console.log(person3.shakes[0].dunkin)
-console.log(person3.shakes[0].culvers)
-console.log(person3.shakes[0].mcDonalds)
-console.log(person3.shakes[0].cupids_candies)
+// console.log(person3.pizza)
+// console.log(person3.tacos)
+// console.log(person3.burgers)
+// console.log(person3.ice_cream)
+// console.log(person3.shakes[0].oberwise)
+// console.log(person3.shakes[0].dunkin)
+// console.log(person3.shakes[0].culvers)
+// console.log(person3.shakes[0].mcDonalds)
+// console.log(person3.shakes[0].cupids_candies)
 
 
 
@@ -88,4 +98,5 @@ c.then((message) =>{
 }).catch((message) =>{
     console.log("This is a "+message)
 })
+
 
