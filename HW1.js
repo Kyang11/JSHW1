@@ -4,22 +4,18 @@ the list and checks that the current name is in the string passed in. The output
 "Matched dog_name" if name is in the string, if no matches are present console.log "No Matches"
 */
 let dog_string = "Hello Max, my name is Dog, and I have purple eyes!"
+let dog_names = ["Max","HAS","PuRple","dog"]
 
+  function findWords(){
+      if(dog_string.includes(dog_names)){
+          console.log("Match Dog_name")
 
-function findWords(value) {
-    let dog_names = ["Max","HAS","PuRple","dog"]
-    for (let i = 0; i < dog_names.length; i++) {
-      if (value.indexOf(dog_names[i]) >-1) {
-        return "Match dog_names";
-      } else {
-        return " No Match";
+      }else{
+          console.log("No Match")
       }
-    }
   }
+  console.log(findWords());
   
-  arr = dog_string.filter(findWords());
-  console.log(arr);
-
 //============Exercise #2 ============//
 /*Write a fucntion that takes in an array and removes every even index with a splice,
 and replaces it with the string "even index" */
