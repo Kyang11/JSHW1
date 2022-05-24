@@ -33,18 +33,6 @@ function food(thing) {
 }
 
 food(person3)
-// or 
-// console.log(person3.pizza)
-// console.log(person3.tacos)
-// console.log(person3.burgers)
-// console.log(person3.ice_cream)
-// console.log(person3.shakes[0].oberwise)
-// console.log(person3.shakes[0].dunkin)
-// console.log(person3.shakes[0].culvers)
-// console.log(person3.shakes[0].mcDonalds)
-// console.log(person3.shakes[0].cupids_candies)
-
-
 
 //=======Exercise #2=========//
 /*
